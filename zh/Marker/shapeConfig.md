@@ -9,11 +9,11 @@
 
 coords取值说明：
 
-* circle:coords格式为 \[x1, y1, r\]，x1，y1为圆心像素坐标，r为圆半径
+* type：circle ——coords格式为 \[x1, y1, r\]，x1，y1为圆心像素坐标，r为圆半径
 
-* poly: coords格式为 \[x1, y1, x2, y2 … xn, yn\]，各x，y表示多边形边界像素坐标
+* type：poly ——coords格式为 \[x1, y1, x2, y2 … xn, yn\]，各x，y表示多边形边界像素坐标
 
-* rect: coords格式为 \[x1, y1, x2, y2\]，x1，y1为矩形左上角像素坐标，x2，y2为矩形右下角像素坐标
+* type：rect—— coords格式为 \[x1, y1, x2, y2\]，x1，y1为矩形左上角像素坐标，x2，y2为矩形右下角像素坐标
 
 
 
