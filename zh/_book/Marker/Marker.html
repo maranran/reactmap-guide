@@ -1,0 +1,386 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>点标记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="config.html" />
+    
+    
+    <link rel="prev" href="../Map/loadConfig.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Map/Map.html">
+            
+                <a href="../Map/Map.html">
+            
+                    
+                    地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Map/mapConfig.html">
+            
+                <a href="../Map/mapConfig.html">
+            
+                    
+                    MapConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Map/loadConfig.html">
+            
+                <a href="../Map/loadConfig.html">
+            
+                    
+                    LoadConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="Marker.html">
+            
+                <a href="Marker.html">
+            
+                    
+                    点标记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    MarkerConfig
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >点标记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5730;&#x56FE;">&#x5730;&#x56FE;</h1>
+<h2 id="marker&#x7EC4;&#x4EF6;">Marker&#x7EC4;&#x4EF6;</h2>
+<h6 id="&#x70B9;&#x6807;&#x8BB0;">&#x70B9;&#x6807;&#x8BB0;</h6>
+<pre><code>import AMap from &apos;../AMap&apos;;  //&#x4F7F;&#x7528;Amap
+const Marker = AMap.Marker;  //Marker&#x7EC4;&#x4EF6;
+&lt;AMap id=&quot;id&quot;&gt;
+  &lt;Marker&gt;&lt;/Marker&gt;
+&lt;/AMap&gt;
+</code></pre><h2 id="&#x7EC4;&#x4EF6;&#x9759;&#x6001;&#x5C5E;&#x6027;">&#x7EC4;&#x4EF6;&#x9759;&#x6001;&#x5C5E;&#x6027;</h2>
+<h6 id="&#x4EC5;&#x4E14;&#x53EF;&#x4EE5;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x54CD;&#x5E94;&#x5F0F;&#x3002;">&#x4EC5;&#x4E14;&#x53EF;&#x4EE5;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x54CD;&#x5E94;&#x5F0F;&#x3002;</h6>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="config.html">config</a></td>
+<td>Object</td>
+<td>&#x8BBE;&#x7F6E;&#x70B9;&#x6807;&#x8BB0;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;</td>
+</tr>
+<tr>
+<td>map</td>
+<td>Map</td>
+<td>&#x8981;&#x663E;&#x793A;&#x8BE5;marker&#x7684;&#x5730;&#x56FE;&#x5BF9;&#x8C61;,&#x4E00;&#x822C;&#x4E3A;&#x5916;&#x5C42;AMap&#x751F;&#x6210;&#x7684;&#x5730;&#x56FE;&#x5B9E;&#x4F8B;,&#x81EA;&#x52A8;&#x83B7;&#x53D6;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x4E8B;&#x4EF6;&#x5F85;&#x6574;&#x7406;">&#x4E8B;&#x4EF6;(&#x5F85;&#x6574;&#x7406;)</h2>
+<h2 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;">&#x793A;&#x4F8B;&#x4EE3;&#x7801;</h2>
+<pre><code>import React, { Component } from &apos;react&apos;;
+import { provinces } from &apos;./consts&apos;;
+import AMap from &apos;../AMap&apos;;
+const Marker = AMap.Marker;  //Marker&#x7EC4;&#x4EF6;
+
+const renderMarker = (markers) =&gt; {
+  let result = null;
+  if (Array.isArray(markers) &amp;&amp; markers.length &gt; 0) {
+    result = markers.map((marker, index) =&gt; &lt;Marker key={index} options={marker} /&gt;);
+  }
+  return result;
+};
+
+export default class AMapView extends Component {
+  constructor() {
+    super();
+    this.state = {
+      markers: null,
+    };
+    this.getMap = this.getMap.bind(this);
+  }
+
+  getMap() {
+    const markers = provinces.map(pro =&gt; ({
+      position: pro.center.split(&apos;,&apos;),
+      offset: { x: -12, y: -12 },
+    }));
+    this.setState({
+      markers,
+    });
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;AMap&gt;
+          {renderMarker(this.state.markers)}
+        &lt;/AMap&gt;
+        &lt;button onClick={this.getMap}&gt;&#x70B9;&#x6211;&lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Map/loadConfig.html" class="navigation navigation-prev " aria-label="Previous page: LoadConfig">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="config.html" class="navigation navigation-next " aria-label="Next page: MarkerConfig">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"点标记","level":"1.3","depth":1,"next":{"title":"MarkerConfig","level":"1.3.1","depth":2,"path":"Marker/config.md","ref":"Marker/config.md","articles":[]},"previous":{"title":"LoadConfig","level":"1.2.2","depth":2,"path":"Map/loadConfig.md","ref":"Map/loadConfig.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Marker/Marker.md","mtime":"2016-12-28T03:31:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-27T11:33:53.742Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
