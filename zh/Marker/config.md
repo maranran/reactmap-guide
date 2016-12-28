@@ -15,6 +15,3 @@
 | visible | Boolean | 点标记是否可见，默认为trueIcon |
 | [icon](./iconConfig.md) | Object | icon属性配置，参数详情参加[文档](./iconConfig.md) |
 | [shape](./shapeConfig.md) | Object | 设置Marker的可点击区域，在定义的区域内可触发Marker的鼠标点击事件，参数详情参见[文档](./shapeConfig.md) |
-
-
-
